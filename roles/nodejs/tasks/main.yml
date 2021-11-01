@@ -10,7 +10,7 @@
 #  #with_items: nodejs,npm
 
 - name: Installing nvm
-  command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+  shell: 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash'
 
 - name: Executing nvm
   command: /home/ec2-user/.nvm/nvm.sh
